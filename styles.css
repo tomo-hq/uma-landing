@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'Averta';
-  src: url('./assets/fonts/AvertaStandard-Regular.ttf');
+  src: url('https://github.com/tomo-hq/uma-landing/blob/static/assets/fonts/AvertaStandard-Regular.ttf?raw=true');
 }
 
 html {
@@ -42,7 +42,7 @@ p {
 
 .container {
   height: 100vh;
-  background-image: url('./assets/images/3dprinter.webp');
+  background-image: url('https://github.com/tomo-hq/uma-landing/blob/static/assets/images/3dprinter.webp?raw=true');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,7 +83,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('./assets/images/uma.png');
+  background-image: url('https://github.com/tomo-hq/uma-landing/blob/static/assets/images/uma.png?raw=true');
   background-size: 30rem;
   background-position: center;
   background-repeat: no-repeat;
@@ -106,6 +106,7 @@ p {
 }
 
 .message h1 {
+  color: var(--var-cyan);
   text-transform: uppercase;
   background-color: inherit;
   margin-bottom: 1rem;
