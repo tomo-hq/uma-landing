@@ -2,15 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Averta, sans-serif;
+  font-family: 'Montserrat', serif;
   --var-cyan: #3fc2fa;
   --var-pink: #f52289;
   background: #fff;
-}
-
-@font-face {
-  font-family: 'Averta';
-  src: url('https://github.com/tomo-hq/uma-landing/blob/static/assets/fonts/AvertaStandard-Regular.ttf?raw=true');
 }
 
 html {
@@ -74,7 +69,7 @@ p {
   flex-direction: column;
   gap: 2rem;
   margin: 3rem;
-  max-width: 500px;
+  max-width: 600px;
   background-color: #00000000;
 }
 
@@ -92,15 +87,18 @@ p {
   width: 100%;
   height: 150px;
   background-color: inherit;
-  transition: 500ms;
+  transition: filter 0.3s ease-in-out;
 }
 
 .logo:hover {
-  filter: contrast(160%);
-  transition: 500ms;
+  filter: contrast(200%);
 }
 
 .message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
   background-color: inherit;
   color: #fff;
 }
@@ -109,10 +107,36 @@ p {
   color: var(--var-cyan);
   text-transform: uppercase;
   background-color: inherit;
-  margin-bottom: 1rem;
 }
 
 .message p {
   text-align: center;
+  background-color: inherit;
+}
+
+.social-links {
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  fill: white;
+  transition: fill 0.3s ease;
+}
+
+.social-btn:hover {
+  fill: var(--var-pink);
+}
+
+.social-btn svg {
+  width: 40px;
+  height: 40px;
   background-color: inherit;
 }
